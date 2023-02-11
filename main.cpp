@@ -132,7 +132,7 @@ void Employee::getData(){
 void Employee::showData(int enteredNum){
   if(enteredNum == IDNum || enteredNum == 0){
     if(enteredNum == IDNum){
-      cout << "\n\n*******Employee " << enteredNum <<"'s Information*******\n";
+      cout << "\n\n*******Employee " << name <<"'s Information*******\n";
     }
 
     foundEmployee = true;
@@ -301,6 +301,9 @@ void clearDeleted(){
   
     cout << "Deleted Records Have Been Cleared\n";
     }
+  else{
+    cout << "Data has not been deleted\n";
+  }
 
   cout << "Press 'enter' to return to main menu";
   cin.get();
